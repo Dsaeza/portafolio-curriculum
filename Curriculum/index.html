@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <!-- header -->
+    <div class="contenedor-header">
+        <header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi " onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <!-- Contiene mi imagen de perfil -->
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>David Sáez Araneda</h1>
+            <h2>Ingeniero en informatica</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/david-saez-araneda/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:david.saeza@utem.cl"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/Dsaeza"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Sobre mí -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>
+                Soy un entusiasta del desarrollo de aplicaciones y la creación de páginas
+                web. Persistente y siempre en busca de nuevos conocimientos, mi objetivo
+                es superar obstáculos y ofrecer soluciones innovadoras. Mi pasión por
+                aprender y crecer en este campo me impulsa constantemente.
+
+            </span></p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            20 de Ocutbre de 1998
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <p>david.saeza@utem.cl</p>
+                            <p>dsaez46@gmail.com</p>
+                        </li>
+                        <li>
+                            <strong>Paginas</strong>
+                            <p>https://www.linkedin.com/in/
+                                david-saez-araneda/</p>
+                            <p>https://github.com/Dsaeza</p>
+                        </li>                  
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-paint-brush"></i>
+                            <span>Pintar y dibujar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad" ></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>Bicicleta</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hiking"></i>
+                            <span>Senderismo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button  onclick="window.open('cv.pdf')">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- Habilidades -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <!--  -->
+                    <div class="skill " style="margin-top: 10px;">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dart y Flutter</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Firebase</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Habilidades Profesionaless -->
+                <div class="col">
+                <h3>Habilidades Profesionales</h3>
+                    <!--  -->
+                    <div class="skill" style="margin-bottom: 20px; margin-top: 10px;">
+                        <span>Comunicación efectiva</span>
+                        <i class="fa-solid fa-ear-listen profesional fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-people-group profesional fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-lightbulb profesional fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-file-invoice profesional fa-2xl"  style="color: #5EA9DA;"></i>
+                    </div>
+                    <div class="skill" style="margin-bottom: 20px;">
+                        <span>Analisis</span>
+                        <i class="fa-solid fa-glasses fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-file-invoice fa-2xl"  style="color: #5EA9DA;"></i>
+                    </div>
+                    <div class="skill" style="margin-bottom: 20px;">
+                        <span>Trabajo en equipo</span>
+                        <i class="fa-solid fa-handshake-angle fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-people-group profesional fa-2xl"  style="color: #5EA9DA;"></i>
+                    </div>
+                    <div class="skill" style="margin-bottom: 20px;">
+                        <span>Creativo</span>
+                        <i class="fa-solid fa-palette fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-lightbulb profesional fa-2xl"  style="color: #5EA9DA;"></i>
+      
+                    </div>
+                    <div class="skill" style="margin-bottom: 20px;">
+                        <span>Adaptable</span>
+                        <i class="fa-solid fa-brain fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-code-branch fa-2xl"  style="color: #5EA9DA;"></i>
+                    </div>
+                    <div class="skill" style="margin-bottom: 20px;">
+                        <span>Aprendizaje continuo</span>
+                        <i class="fa-solid fa-chalkboard-user fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-graduation-cap fa-2xl"  style="color: #5EA9DA;"></i>
+                        <i class="fa-solid fa-pencil fa-2xl" style="color: #5EA9DA;"></i>
+                    </div>
+                    <!-- Fin habilidades profesionales -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experiencia -->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="fila">
+                <!-- Columna izquierda -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeneria en informatica</h4>
+                        <span class="casa">Universidad Tecnológica Metropolitana</span>
+                        <span class="fecha">2017-2022</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ciencias de la Ingeniería</h4>
+                        <span class="casa">Universidad Tecnológica Metropolitana</span>
+                        <span class="fecha">2017-2021</span>
+                        <!-- <p>
+
+                        </p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ténico medio en Telecomunicaciones</h4>
+                        <span class="casa">Liceo Politecnico Andes DuocUc</span>
+                        <span class="fecha">2012-2016</span>
+                        <!-- <p>
+
+                        </p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Columna derecha -->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador aplicación web</h4>
+                        <span class="casa">Universidad de Chile y UTEM</span>
+                        <span class="fecha">Sept 2021 - Enero 2023</span>
+                            <ul class="lid" >
+                                <li>Diseño de plantilla de la aplicación web <font>(Figma)</font></li>
+                                <li>Desarrollo de aplicación web <font>(Frontend: Flutter y Dart)</font></li>
+                                <li>Desarrollo en equipo sobre funciones <font>(Backend: Dart y
+                                    Python)</font></li>
+                                <li>Diseño, creación y mantención de base de datos no
+                                    relacional <font>(Firebase)</font>
+                                    </li>
+                            </ul>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Mesa de ayuda</h4>
+                        <span class="casa">Grupo Imporper</span>
+                        <span class="fecha">diciembre 2016 - marzo 2017</span>
+                        <ul class="lid" >
+                            <li>Atención y ayuda sobre software</li>
+                            <li>Mantención de equipos</li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Servicio Ténico</h4>
+                        <span class="casa">TecnoDeTodo</span>
+                        <span class="fecha">2015 - 2017</span>
+                        <ul class="lid" >
+                            <li>Instalación de software</li>
+                            <li>Cambio de hardware en computadoras</li>
+                            <li>Mantención de computadoras</li>
+                        </ul>
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Que el portafolio lo tire a otra pagina **Portafolios.html* -->
+    <section class="contacto" id="contacto">
+            <h2>Contacto</h2>
+            <div class="col">
+                <form id="formulario" action="https://formsubmit.co/david.saeza@utem.cl" method="post">
+                    <div class="inputBox">
+                        <input type="text" name="correo" id="correo" required="required">
+                        <span>Correo</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="nombre" id="nombre" required="required">
+                        <span>Nombre</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="asunto" id="asunto" required="required">
+                        <span>Asunto</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea maxlength="1000" name="mensaje" id="mensaje" cols="30" rows="10" required="required"></textarea>
+                        <span>Mensaje</span>
+                    </div>
+                    <button id="form" type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    <div id="validateForm"></div>
+                    <input type="hidden" name="Año: " value="2023">
+                    <input type="hidden" name="_next" value="https://famous-toffee-61da28.netlify.app/successForm.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+    </section>
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
